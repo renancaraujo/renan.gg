@@ -5,13 +5,14 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html -d docs",
-    "deploy": "surge dist --domain caraujo.me",
+    "pre-commit": "npm run build",
     "test": "test"
   },
   "author": "Renan C. Araujo",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "husky": "^1.2.0",
     "parcel-bundler": "^1.10.3"
   }
 }
