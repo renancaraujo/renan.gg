@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129677517-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129677517-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,6 +30,12 @@
             <a target="_blank" href="https://medium.com/@renancaraujo">Medium</a>, <a target="_blank" href="https://www.linkedin.com/in/renancaraujo/">LinkedIn</a>, <a target="_blank" href="https://stackoverflow.com/users/2797140/renan-c-araujo">Stack Overflow</a>, <a target="_blank" href="https://codepen.io/caraujo/">Codepen</a>, <a target="_blank" href="https://twitter.com/__caraujo__">Twitter</a> and <a target="_blank" href="https://dribbble.com/caraujo">Dribbble</a> 
         </p>
     </main>
-    <script></script>
+    <div class="painter"></div>
+    <script type="text/javascript">
+        "use strict"
+        if ('paintWorklet' in CSS) {
+            CSS.paintWorklet.addModule('stripespainter.js');
+        }
+    </script>
 </body>
 </html>
