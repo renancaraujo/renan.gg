@@ -94,9 +94,9 @@ main a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    --line-thinckness: 1;
+    --line-thickness: 1;
     --line-interval: 2;
-    --line-color: rgba(0, 0, 0, 0.1) ;
+    --line-color: rgba(0, 0, 0, 0.08) ;
     background-image: paint(stripes);
     pointer-events: none;
 }
