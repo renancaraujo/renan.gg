@@ -100,3 +100,16 @@ main a:hover {
     background-image: paint(stripes);
     pointer-events: none;
 }
+
+.photos{
+    position: relative;
+}
+
+.photos >:first-child{
+    position: absolute;
+    transition: opacity 2s;
+}
+
+.photos >:first-child:hover{
+    opacity: 0;
+}
