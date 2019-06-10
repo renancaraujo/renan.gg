@@ -1,3 +1,5 @@
-# Renan C. Araújo site
+# My site
 
-[caraujo.me](https://caraujo.me) made with parcel
+Made with parcel
+
+[caraujo.me](https://caraujo.me)
