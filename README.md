@@ -2,4 +2,4 @@
 
 Made with parcel
 
-[caraujo.me](https://caraujo.me)
+[renan.gg](https://renan.gg)
