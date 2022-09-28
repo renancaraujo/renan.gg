@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129677517-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -14,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Renan C. Araújo</title>
+    <title>Renan Araújo</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300|Merriweather:700" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
 </head>
@@ -22,32 +21,31 @@
     <main>
         <div class="content-duh">
             <aside class="photos">
-                <img src="./me_with_glasses.jpg" alt="A photo o'mine" />
-                <img src="./doggo2.jpg" alt="A photo of a dog" />
+                <div>
+                    <img src="./me_with_glasses.jpg" alt="A photo o'mine" />
+                    <img src="./doggo2.jpg" alt="A photo of a dog" />
+                </div>
             </aside>
             <div class="not-photos">
                 <p>
-                    Hello, my name is <span>Renan C. Araujo</span> and I do stuff (mostly software).<br />
-                    You can find some of my code on <a target="_blank" href="https://github.com/renancaraujo">Github</a>.
+                    👋 Hello, my name is <span>Renan Araujo</span> and I do stuff (mostly software).
+                </p>
+                <p>
+                    You can find some of my code on <a target="_blank" href="https://github.com/renancaraujo">Github</a>.<br>
                 </p>
                 <p>
                     Find me also on<br />
 
                     <a target="_blank" href="https://www.linkedin.com/in/renancaraujo/">LinkedIn</a>,
-                    <a target="_blank" href="https://codepen.io/caraujo/">Codepen</a> and <a target="_blank" href="https://twitter.com/reNotANumber">Twitter</a>,
+                    <a target="_blank" href="https://codepen.io/caraujo/">Codepen</a> and <a target="_blank" href="https://twitter.com/reNotANumber">Twitter</a>.
                 </p>
                 <p>
-                    As a hobbist photographer, I have posted some of my photos on <a target="_blank" href="https://unsplash.com/@renancaraujo">Unsplash</a>
+                    As a hobbist photographer, I have posted some of my photos on <a target="_blank" href="https://unsplash.com/@renancaraujo">Unsplash</a>.
                 </p>
             </div>
         </div>
     </main>
     <div class="painter"></div>
-    <script type="text/javascript">
-        "use strict"
-        if ('paintWorklet' in CSS) {
-            CSS.paintWorklet.addModule('stripespainter.js');
-        }
-    </script>
+    <script type="module" src="thething.js"></script>
 </body>
 </html>

@@ -28,8 +28,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background-color: #fff;
-    color: #333;
+    background-color: black;
+    color: #fff6e4;
 }
 
 main {
@@ -37,7 +37,7 @@ main {
     height: 100vh;
     min-height: 40em;
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 2em;
     overflow: hidden;
     display: flex;
     justify-content: flex-start;
@@ -49,9 +49,42 @@ main {
 main img {
     width: 100%;
     max-width: 10em;
-    border-radius: 50%;
+ 
+}
+
+main img:hover {
+    border-radius: 0px;
+}
+
+aside {
     margin-bottom: 2.5em;
 }
+
+
+ aside > div {
+    display: flex;
+    position: relative;
+    transition: all 1s cubic-bezier(.49,.52,0,1.14);
+    overflow: hidden;
+    border-top-left-radius: 118% 119%;
+    border-top-right-radius: 83% 83%;
+}
+
+main aside > div  {
+    border-bottom-right-radius: 130% 132%;
+    border-bottom-left-radius: 73% 80%;
+}
+
+aside > div:hover {
+    border-top-left-radius: 78% 89%;
+    border-top-right-radius: 218% 151%;
+}
+
+main aside > div:hover {
+    border-bottom-left-radius: 173% 180%;
+    border-bottom-right-radius: 112% 158%;
+}
+
 
 main p {
     font-size: 1.08125em;
@@ -68,7 +101,7 @@ main p span {
 }
 
 main a {
-    color: hsl(30, 100%, 50%);
+    color: #ff8f1e;
     font-family: 'Merriweather', serif;
     font-weight: 700;
     text-decoration: none;
@@ -83,36 +116,32 @@ main .content-duh {
     align-items: flex-start;
 }
 .painter {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    --line-thickness: 3;
+    --line-thickness: 0;
     --line-interval: 2;
-    --line-color: rgba(0, 0, 0, 0.07);
+    --line-color: #a7a7aa;
     background-image: paint(stripes);
     pointer-events: none;
-    z-index: 1;
+    z-index: 10;
+    position: absolute;
+    inset: 0;
+    mix-blend-mode: color-burn;
 }
 
 .photos {
-    position: relative;
-    padding-right: 2em;
+    
+    margin-right: 2em;
 }
 
-.photos >:first-child{
+.photos div >:first-child{
     position: absolute;
-    transition: opacity 2s;
+    transition: opacity 1s cubic-bezier(.49,.52,0,1.14);    
 }
 
-.photos >:first-child:hover{
+.photos div >:first-child:hover{
     opacity: 0;
 }
 
-.oldphoto {
-    display: none;
-}
+
 
 @media (max-width: 40em) {
     body{

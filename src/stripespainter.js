@@ -2,6 +2,7 @@ registerPaint("stripes", class {
     static get inputProperties() {
         return ["--line-color", "--line-thickness", "--line-interval"]
     }
+    static get contextOptions() { return {alpha: true}; }
     paint(ctx, geom, properties) {
         const lineColor = properties.get("--line-color").toString() || "#000000";
         let lineThickness, lineInterval;

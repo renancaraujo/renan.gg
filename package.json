@@ -1,19 +1,17 @@
 {
-  "name": "renancaraujo-site",
+  "name": "renan-gg",
   "version": "0.1.0",
-  "description": "Renan C. Araujo personal website",
+  "description": "Renan Araujo personal website",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html -d docs",
+    "build": "parcel build src/index.html --dist-dir docs",
     "pre-commit": "npm run build",
     "test": "test"
   },
-  "author": "Renan C. Araujo",
+  "author": "Renan Araujo",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "husky": "^1.2.0",
-    "parcel-bundler": "^1.12.5",
-    "parcel-plugin-static-files-copy": "^1.2.4"
+    "parcel": "^2.0.0"
   }
 }
