@@ -11,7 +11,7 @@
   "author": "Renan Araujo",
   "license": "MIT",
   "devDependencies": {
-    "husky": "^9.1.4",
+    "husky": "^9.1.5",
     "parcel": "^2.12.0"
   }
 }
