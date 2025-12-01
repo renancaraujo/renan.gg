@@ -12,6 +12,6 @@
   "license": "MIT",
   "devDependencies": {
     "husky": "^9.1.6",
-    "parcel": "^2.14.4"
+    "parcel": "^2.16.1"
   }
 }
